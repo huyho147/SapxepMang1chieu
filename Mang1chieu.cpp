@@ -2,20 +2,21 @@
 using namespace std;
 void Sapxep(int Array[5])
 {
-	int max;
-	for (int i = 0; i < 5;i++)
+	int N;
+	for(int i = 0; i < 5; i++)
 	{
 		for (int j = 0; j < 5; j++)
 		{
 			if (Array[j] < Array[j - 1])
 			{
-				max = Array[j];
+				N = Array[j];
 				Array[j] = Array[j - 1];
-				Array[j - 1] = max;
+				Array[j - 1] = N;
 			}
 		}
-	}	
+	}
 }
+
 int main() 
 {
 	int Array[5];
